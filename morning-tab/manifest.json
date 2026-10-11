@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "The Morning Tab",
+  "version": "1.0.0",
+  "description": "A new tab that reads the internet for you. Claude writes a daily front page based on the sites you read.",
+  "permissions": ["history", "storage"],
+  "host_permissions": ["https://api.anthropic.com/*", "https://*/*"],
+  "chrome_url_overrides": { "newtab": "newtab.html" },
+  "options_page": "options.html"
+}

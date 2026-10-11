@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>The Morning Tab – Settings</title>
+<style>
+  body{font:16px Georgia,serif;max-width:520px;margin:48px auto;padding:0 16px;color:#1a1612;background:#f6f3ea}
+  h1{font-weight:700} label{display:block;margin:18px 0 6px;font-size:14px}
+  input{width:100%;padding:8px;font:14px monospace;box-sizing:border-box}
+  button{margin-top:18px;padding:8px 18px;font:14px Georgia,serif;cursor:pointer}
+  #msg{margin-left:12px;color:#a0522d}
+  p.note{font-size:13px;color:#6b6358}
+</style>
+<h1>The Morning Tab</h1>
+<label for="key">Anthropic API key</label>
+<input id="key" type="password" placeholder="sk-ant-..." autocomplete="off">
+<label for="model">Model</label>
+<input id="model" placeholder="claude-sonnet-5-5">
+<label for="days">Days of history to read</label>
+<input id="days" type="number" min="1" max="30" value="7">
+<button id="save">Save</button><span id="msg"></span>
+<p class="note">The key is stored only in this browser (chrome.storage.local) and is sent only to api.anthropic.com.
+Your browsing history is read locally; page titles and headlines from your most-visited sites are sent to the API to write your edition.</p>
+<script src="options.js"></script>
